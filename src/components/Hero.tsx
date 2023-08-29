@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <div id="Home" className=" min-h-screen my-16">
+    <div id="home" className=" min-h-screen my-16">
       <div className="container grid lg:grid-cols-2 h-[calc(100vh-60px)]">
         <div
           className=" lg:block flex flex-col justify-center items-center w-[40vw]"

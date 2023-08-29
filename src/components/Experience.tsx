@@ -1,0 +1,133 @@
+import Image from 'next/image';
+import Heading from './Heading';
+
+type Props = {};
+
+export default function Experience({}: Props) {
+  return (
+    <div
+      id="experience"
+      className="container  flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+    >
+      <section className="w-full">
+        <p className="text-4xl mb-6 font-bold border-b-4 border-gray-500 p-2 inline">
+          Experience
+        </p>
+
+        <p className="text-secondary text-center my-6 w-full">
+          I’ve had the pleasure of working with multiple Fortune 500 companies,
+          designing and implementing both frontend and backend.
+        </p>
+
+        <div className="space-y-12 my-16">
+          <div className="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+            <div className="w-96">
+              <Image
+                src="/hdao logo.png"
+                alt=""
+                width={150}
+                height={150}
+                className="w-80 mx-auto bg-white"
+              />
+            </div>
+
+            <div className="flex flex-wrap justify-center text-center lg:text-left lg:block">
+              <h3 className="text-white text-5xl font-bold">
+                hdao{' '}
+                <span className="text-base font-semibold">
+                  {' '}
+                  {''}info systems.
+                </span>
+              </h3>
+
+              <div className="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                <div className="px-2 py-2 text-sm bg-gray-900 font-bold rounded ">
+                  MERN / Full Stack
+                </div>
+                <div className="px-2 py-2 text-sm bg-gray-900 font-semibold rounded-xl ">
+                  React
+                </div>
+                <div className="px-2 py-2 text-sm bg-gray-900 font-semibold rounded-xl ">
+                  Express
+                </div>
+                <div className="px-2 py-2 text-sm bg-gray-900 font-semibold rounded-xl ">
+                  Node
+                </div>
+                <div className="px-2 py-2 text-sm bg-gray-900 font-semibold rounded-xl ">
+                  Mongo DB
+                </div>
+              </div>
+
+              <p className="font-sans">
+                <div className="mb-1">
+                  {' '}
+                  • Currently Building Fashion & Grocery E-commerce web app
+                  using MERN stack from the Ground up for an indonesian firm.
+                </div>{' '}
+                <div>
+                  • It’s a 8-page layout, along with 12+ sub-page e-store,
+                  features included customer-service, inventory-management for
+                  merchants, product catalogue, cart, stripe payments and
+                  mobile-responsiveness etc.
+                </div>
+              </p>
+            </div>
+          </div>
+          <div className="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+            <div className="w-96">
+              <Image
+                src="/hdao logo.png"
+                alt=""
+                width={150}
+                height={150}
+                className="w-80 mx-auto bg-white"
+              />
+            </div>
+
+            {/* <!-- Client info --> */}
+            <div className="flex flex-wrap justify-center text-center lg:text-left lg:block">
+              <h3 className="text-white text-5xl font-bold">
+                hdao{' '}
+                <span className="text-base font-semibold"> info systems.</span>
+              </h3>
+
+              <div className="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
+                <div className="px-2 py-2 text-sm bg-gray-900 font-bold rounded ">
+                  Frontend Developer
+                </div>
+                <div className="px-2 py-2 text-sm bg-gray-900 font-semibold rounded-xl ">
+                  React
+                </div>
+                <div className="px-2 py-2 text-sm bg-gray-900 font-semibold rounded-xl ">
+                  CSS
+                </div>
+                <div className="px-2 py-2 text-sm bg-gray-900 font-semibold rounded-xl ">
+                  Firebase
+                </div>
+              </div>
+
+              <p className="font-sans">
+                <div className="mb-1">
+                  {' '}
+                  • Developed web-based user interactions for bakers (food
+                  e-store) & school/college managements and developed
+                  highly-responsive user interface components via Redux & React
+                  concepts.
+                </div>{' '}
+                <div className="mb-1">
+                  • Converted the Class based components to React Hooks and
+                  implemented Firebase Authentication & database with reusable
+                  components.
+                </div>
+                <div>
+                  • Optimized components for maximum performance across a vast
+                  array of web-capable devices and browsers.
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
