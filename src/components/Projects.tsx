@@ -7,11 +7,11 @@ import { data } from "./projectsData";
 
 const Projects = () => {
   return (
-    <div id="projects" className="container  mb-16">
-      <p className="text-4xl mb-44 font-bold border-b-4 border-gray-500 p-2 inline">
+    <div id="projects" className="w-screen mx-auto px-12  mb-16 py-16">
+      <div className="text-4xl  font-bold border-b-4 border-gray-500 p-2 inline">
         Personal Projects
-      </p>{' '}
-      <div className="grid gap-28 xl:gap-0 xl:gap-y-10 md:grid-cols-2 lg:grid-cols-3 place-items-center">
+      </div>{' '}
+      <div className="grid mt-20 gap-28 xl:gap-0 xl:gap-y-10 md:grid-cols-2 lg:grid-cols-3 place-items-center">
         {data.map((el) => (
           <Card
             key={el.id}
