@@ -11,7 +11,7 @@ const Projects = () => {
       <div className="text-4xl  font-bold border-b-4 border-gray-500 p-2 inline">
         Personal Projects
       </div>{' '}
-      <div className="grid mt-20 gap-28 xl:gap-0 xl:gap-y-10 md:grid-cols-2 lg:grid-cols-3 place-items-center">
+      <div className="grid mt-20 gap-28 xl:gap-0 xl:gap-y-10 md:grid-cols-2 lg:grid-cols-3 place-items-center lg:px-10">
         {data.map((el) => (
           <Card
             key={el.id}

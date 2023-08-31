@@ -6,14 +6,14 @@ export default function Experience({}: Props) {
   return (
     <div
       id="experience"
-      className="container pt-16   flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full mt-20 lg:mt-auto"
+      className=" pt-16   flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full mt-20 lg:mt-auto"
     >
       <section className="w-full">
         <p className="text-4xl mb-6 font-bold border-b-4 border-gray-500 p-2 inline">
           Experience
         </p>
 
-        <p className="text-secondary  my-6 w-full">
+        <p className="text-secondary font-mono  my-6 w-full lg:w-[75%]">
           I’ve had the pleasure of working with excellent team in small company
           Nearly 4 years, designing and implementing both frontend and backend.
         </p>

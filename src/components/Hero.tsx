@@ -15,6 +15,7 @@ const Hero = () => {
             src="/profile.png"
             width={284}
             height={284}
+            priority = {false}
             alt="profile"
           />
           {/* <div className="text-center mt-20"> */}
@@ -86,7 +87,7 @@ const Hero = () => {
             {/* </div> */}
           </div>
         </div>
-        <div className="w-full lg:w-[60%] lg:pl-8 my-20  lg:my-0 text-center lg:text-left  text-6xl md:text-8xl lg:text-9xl font-bold leading-tight flex justify-center items-center">
+        <div className="w-full lg:w-[60%] lg:pl-8 mt-20  lg:my-0 text-center lg:text-left  text-6xl md:text-8xl lg:text-9xl font-bold leading-tight flex justify-center items-center">
           <div>
             <p className="text-3xl" data-aos="zoom-in-up">
               Hey there, I&apos;m

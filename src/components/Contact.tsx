@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsTelephone } from 'react-icons/bs';
+import { BsLinkedin } from 'react-icons/bs';
+
 
 const Contact = () => {
   const [msg, setMsg] = useState<string>('');
@@ -45,10 +47,13 @@ const Contact = () => {
           </p>
 
           <div className="flex gap-3 items-center" data-aos="zoom-in-up">
-            <AiOutlineMail size={30} /> hello@bravecoders.com
+            <AiOutlineMail size={30} /> sandeepreddyr97@gmail.com
           </div>
           <div className="flex gap-3 items-center" data-aos="zoom-in-up">
-            <BsTelephone size={30} /> +1 (222) 000-0000
+            <BsTelephone size={30} /> +91 85220 94080
+          </div>
+          <div  className="flex gap-3 items-center" data-aos="zoom-in-up">
+            <BsLinkedin size={30} />LinkedIn/sandeepreddy97
           </div>
         </div>
 

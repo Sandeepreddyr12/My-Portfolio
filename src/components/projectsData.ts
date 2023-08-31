@@ -100,7 +100,7 @@ export const data = [
     id: 5,
     title: 'My Portfolio',
     desc: 'Explore my straightforward portfolio, a showcase of my personal projects, skills, and experiences, meticulously crafted using Next.js for a clean and engaging presentation.',
-    img: '/foodgredient.webp',
+    img: '/myPortfolio.png',
     links: { github: '', website: '', video: '' },
 
     tags: ['Next', 'Tailwind'],
