@@ -4,14 +4,14 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <div id="home" className="w-screen min-h-screen">
+    <div id="home" className="w-screen min-h-screen mt-5">
       <div className="w-full mx-10  flex flex-wrap justify-between items-center h-[100vh]">
         <div
           className="w-full lg:w-[38%] flex flex-col justify-around items-center "
           data-aos="fade-right"
         >
           <Image
-            className="rounded-full m-auto   select-none"
+            className="rounded-full m-auto   select-none pointer-events-none"
             src="/profile.png"
             width={284}
             height={284}

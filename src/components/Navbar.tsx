@@ -34,10 +34,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={` fixed top-0 right-0  left-0 z-10 border-gray-200        
+      className={` fixed top-0 right-0  left-0 z-10 border-gray-200       
 ${bgColor && 'backdrop-blur-[80px] '}`}
     >
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2 md:py-6 md:px-12">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2 md:py-4 md:px-12">
         <div className="text-xl font-medium">Sandeep</div>
 
         <button
