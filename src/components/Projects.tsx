@@ -7,7 +7,7 @@ import { data } from "./projectsData";
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-screen mx-auto px-12  mb-16 py-16">
+    <div id="projects" className="w-screen mx-auto px-12  mb-16 py-20">
       <div className="text-4xl  font-bold border-b-4 border-gray-500 p-2 inline">
         Personal Projects
       </div>{' '}

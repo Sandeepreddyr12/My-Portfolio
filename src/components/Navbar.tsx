@@ -8,19 +8,24 @@ const Navbar = () => {
 
   const [openNav, setOpenNav] = useState<boolean>(false);
 
+  const [currentRoute, setCurrentRoute] = useState<string | null>(null);
+
+
 
   const navToggler = () => {
     setOpenNav(!openNav);
   };
 
-  
-
   const changeBackground = () => {
-    if (window.scrollY >= 60) {
+    if (window.scrollY >= 60 || openNav) {
       setBgColor(true);
     } else {
       setBgColor(false);
     }
+
+    setCurrentRoute(
+      window && window.location.hash ? window.location.hash : null
+    );
   };
 
   useEffect(() => {
@@ -34,7 +39,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={` fixed top-0 right-0  left-0 z-10 border-gray-200       
+      className={` fixed px-6 md:pt-4 top-0 right-0  left-0 z-10 border-gray-200       
 ${bgColor && 'backdrop-blur-[80px] '}`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2 md:py-4 md:px-12">
@@ -67,15 +72,20 @@ ${bgColor && 'backdrop-blur-[80px] '}`}
         </button>
         <div
           className={`${
-            !openNav? 'hidden' : 'auto'
-          } w-full md:block md:w-auto`} id="navbar-default"
-           onClick={navToggler}
+            !openNav ? 'hidden' : 'auto'
+          } w-full md:block md:w-auto`}
+          id="navbar-default"
+          onClick={navToggler}
         >
-          <ul className="font-medium flex flex-col p-4 md:p-0  mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
+          <ul className="font-medium text-center bg-black md:bg-transparent flex flex-col p-4 md:p-0  mt-4 border border-none rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
             <li>
               <Link
                 href="/"
-                className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                className={`block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent  md:p-0 dark:text-white   ${
+                  currentRoute === null
+                    ? 'bg-green-700  md:dark:text-green-500 md:text-green-700'
+                    : ''
+                }`}
                 aria-current="page"
               >
                 Home
@@ -84,7 +94,11 @@ ${bgColor && 'backdrop-blur-[80px] '}`}
             <li>
               <Link
                 href="#experience"
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className={`block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent  md:p-0 dark:text-white   ${
+                  currentRoute === '#experience'
+                    ? 'bg-green-700  md:dark:text-green-500 md:text-green-700'
+                    : ''
+                }`}
               >
                 Experience
               </Link>
@@ -92,7 +106,11 @@ ${bgColor && 'backdrop-blur-[80px] '}`}
             <li>
               <Link
                 href="#projects"
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className={`block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent  md:p-0 dark:text-white   ${
+                  currentRoute === '#projects'
+                    ? 'bg-green-700  md:dark:text-green-500 md:text-green-700'
+                    : ''
+                }`}
               >
                 Projects
               </Link>
@@ -100,17 +118,25 @@ ${bgColor && 'backdrop-blur-[80px] '}`}
             <li>
               <Link
                 href="#skills"
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                className={`block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent  md:p-0 dark:text-white   ${
+                  currentRoute === '#skills'
+                    ? 'bg-green-700  md:dark:text-green-500 md:text-green-700'
+                    : ''
+                }`}
               >
                 Skills
               </Link>
             </li>
             <li>
               <Link
-                href="#contact me"
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                href="#contact"
+                className={`block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent  md:p-0 dark:text-white   ${
+                  currentRoute === '#contact'
+                    ? 'bg-green-700  md:dark:text-green-500 md:text-green-700'
+                    : ''
+                }`}
               >
-                Contact Me
+                Contact
               </Link>
             </li>
           </ul>

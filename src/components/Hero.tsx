@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <div id="home" className="w-screen min-h-screen mt-5">
-      <div className="w-full mx-10  flex flex-wrap justify-between items-center h-[100vh]">
+    <div id="home" className="w-screen min-h-screen  pt-20">
+      <div className="w-full px-2 md:px-10  flex flex-wrap justify-between items-center">
         <div
           className="w-full lg:w-[38%] flex flex-col justify-around items-center "
           data-aos="fade-right"
@@ -15,12 +15,12 @@ const Hero = () => {
             src="/profile.png"
             width={284}
             height={284}
-            priority = {false}
+            priority={false}
             alt="profile"
           />
           {/* <div className="text-center mt-20"> */}
 
-          <div className="w-full md:w-1/2 px-6 sm:px-20 md:px-0 lg:w-full  mt-16 flex justify-between items-center flex-wrap">
+          <div className="w-full   md:px-0 lg:w-full  mt-16 flex justify-between items-center">
             <a
               href="/sandeep's Resume.pdf"
               download
@@ -59,7 +59,7 @@ const Hero = () => {
                   ></path>
                 </svg>
               </span>
-              <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
+              <span className="text-xs md:text-sm  relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
                 Get Resume
               </span>
             </a>
@@ -78,7 +78,7 @@ const Hero = () => {
               <button className="relative mx-2  items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-full group">
                 <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
                 <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8"></span>
-                <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900">
+                <span className="relative w-full text-left text-xs md:text-sm text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900">
                   Contact Me
                 </span>
                 <span className="absolute inset-0 border-2 border-white rounded-full"></span>

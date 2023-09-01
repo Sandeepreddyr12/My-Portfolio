@@ -1,9 +1,12 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsTelephone } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';
+import { IoLogoDiscord } from 'react-icons/io5';
+import { FiTwitter } from 'react-icons/fi';
 
 const Contact = () => {
   const [msg, setMsg] = useState<string>('');
@@ -37,7 +40,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact me" className="pt-32 container">
+    <div id="contact" className="pt-32 px-6 container">
       <div className="grid md:grid-cols-2 gap-10">
         <div className="space-y-8">
           <h2 className="text-5xl" data-aos="zoom-in-up">
@@ -54,10 +57,30 @@ const Contact = () => {
           <div className="flex gap-3 items-center" data-aos="zoom-in-up">
             <BsTelephone size={30} /> +91 85220 94080
           </div>
-          <div className="flex gap-3 items-center" data-aos="zoom-in-up">
+          <div className='w-full md:w-[70%]  lg:w-[50%] flex justify-between'>
+
+          <Link
+            href="#"
+            className="flex gap-3 items-center"
+            data-aos="zoom-in-up"
+          >
             <BsLinkedin size={30} />
-            LinkedIn/sandeepreddy97
-          </div>
+          </Link>
+          <Link
+            href="#"
+            className="flex gap-3 items-center"
+            data-aos="zoom-in-up"
+          >
+            <IoLogoDiscord size={30} />
+          </Link>
+          <Link
+            href="#"
+            className="flex gap-3 items-center"
+            data-aos="zoom-in-up"
+          >
+            <FiTwitter size={30} />
+          </Link>
+        </div>
         </div>
 
         <form
