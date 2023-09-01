@@ -5,16 +5,18 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { BsTelephone } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';
 
-
 const Contact = () => {
   const [msg, setMsg] = useState<string>('');
 
+
+  // google spreadsheet url , for storing information.
+
   const scriptURL =
     'https://script.google.com/macros/s/AKfycbwKNeixDmIAb23gg_5WsAcoU8yu8VzCoCuDwwRMOECee1cifGKk6L5vR7yhdCUhOQnGQQ/exec';
-  const form = document.forms['submit-to-google-sheet' as any];
 
   const formSubmitHandler = (e: { preventDefault: () => void }) => {
     e.preventDefault();
+    const form = document.forms['submit-to-google-sheet' as any];
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
       .then((response) => {
         setMsg("Your form has been submitted, I'll be in Touch shortly");
@@ -52,8 +54,9 @@ const Contact = () => {
           <div className="flex gap-3 items-center" data-aos="zoom-in-up">
             <BsTelephone size={30} /> +91 85220 94080
           </div>
-          <div  className="flex gap-3 items-center" data-aos="zoom-in-up">
-            <BsLinkedin size={30} />LinkedIn/sandeepreddy97
+          <div className="flex gap-3 items-center" data-aos="zoom-in-up">
+            <BsLinkedin size={30} />
+            LinkedIn/sandeepreddy97
           </div>
         </div>
 
