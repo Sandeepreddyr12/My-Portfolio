@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 
 const Navbar = () => {
@@ -39,11 +40,19 @@ const Navbar = () => {
 
   return (
     <nav
-      className={` fixed px-6 md:pt-4 top-0 right-0  left-0 z-10 border-gray-200       
+      className={` fixed px-6 md:pt-2 top-0 right-0  left-0 z-10 border-gray-200       
 ${bgColor && 'backdrop-blur-[80px] '}`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2 md:py-4 md:px-12">
-        <div className="text-xl font-medium">Sandeep</div>
+        <Link href="/">
+          <Image
+            className="hover:scale-110 cursor-pointer"
+            src="/sr-logo.jpg"
+            width={60}
+            height={60}
+            alt="github link"
+          />
+        </Link>
 
         <button
           data-collapse-toggle="navbar-default"
@@ -81,7 +90,7 @@ ${bgColor && 'backdrop-blur-[80px] '}`}
             <li>
               <Link
                 href="/"
-                className={`block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent  md:p-0 dark:text-white   ${
+                className={`block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent  md:p-0 dark:text-white hover:scale-105   ${
                   currentRoute === null
                     ? 'bg-green-700  md:dark:text-green-500 md:text-green-700'
                     : ''
@@ -94,7 +103,7 @@ ${bgColor && 'backdrop-blur-[80px] '}`}
             <li>
               <Link
                 href="#experience"
-                className={`block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent  md:p-0 dark:text-white   ${
+                className={`block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent  md:p-0 dark:text-white  hover:scale-105 ${
                   currentRoute === '#experience'
                     ? 'bg-green-700  md:dark:text-green-500 md:text-green-700'
                     : ''
@@ -106,7 +115,7 @@ ${bgColor && 'backdrop-blur-[80px] '}`}
             <li>
               <Link
                 href="#projects"
-                className={`block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent  md:p-0 dark:text-white   ${
+                className={`block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent  md:p-0 dark:text-white  hover:scale-105 ${
                   currentRoute === '#projects'
                     ? 'bg-green-700  md:dark:text-green-500 md:text-green-700'
                     : ''
@@ -118,7 +127,7 @@ ${bgColor && 'backdrop-blur-[80px] '}`}
             <li>
               <Link
                 href="#skills"
-                className={`block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent  md:p-0 dark:text-white   ${
+                className={`block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent  md:p-0 dark:text-white hover:scale-105  ${
                   currentRoute === '#skills'
                     ? 'bg-green-700  md:dark:text-green-500 md:text-green-700'
                     : ''
@@ -130,7 +139,7 @@ ${bgColor && 'backdrop-blur-[80px] '}`}
             <li>
               <Link
                 href="#contact"
-                className={`block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent  md:p-0 dark:text-white   ${
+                className={`block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent  md:p-0 dark:text-white  hover:scale-105 ${
                   currentRoute === '#contact'
                     ? 'bg-green-700  md:dark:text-green-500 md:text-green-700'
                     : ''
