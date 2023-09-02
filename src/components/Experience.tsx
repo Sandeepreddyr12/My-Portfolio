@@ -45,7 +45,7 @@ export default function Experience({}: Props) {
                   font-bold
                   rounded"
                 >
-                  Mar-2022 - Present
+                  july-2022 - Present
                 </div>
               </div>
             </div>
@@ -111,7 +111,7 @@ export default function Experience({}: Props) {
                   font-bold
                   rounded"
                 >
-                  Dec-2019 - June-2022
+                  feb-2020 - June-2022
                 </div>
               </div>
             </div>
