@@ -101,8 +101,12 @@ export const data = [
     title: 'My Portfolio',
     desc: 'Explore my straightforward portfolio, a showcase of my personal projects, skills, and experiences, meticulously crafted using Next.js for a clean and engaging presentation.',
     img: '/myPortfolio.png',
-    links: { github: '', website: '', video: '' },
+    links: {
+      github: 'https://github.com/Sandeepreddyr12/My-Portfolio',
+      website: '',
+      video: '',
+    },
 
-    tags: ['Next', 'Tailwind'],
+    tags: ['Next', 'Typescript', 'Tailwind'],
   },
 ];

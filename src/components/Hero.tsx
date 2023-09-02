@@ -101,7 +101,7 @@ const Hero = () => {
             <div className="text-base font-mono mt-16">
               <p>
                 a passionate fullstack web2 and web3 developer with nearly four
-                years of experience.
+                years of experience in the web developement.
               </p>
 
               <div className="md:w-2/3 w-full px-8 md:px-0  m-auto mt-16 flex justify-around flex-wrap">
