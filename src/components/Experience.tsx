@@ -9,7 +9,7 @@ export default function Experience({}: Props) {
       className=" pt-20   flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full  lg:mt-auto"
     >
       <section className="w-full">
-        <p className="text-4xl mb-6 font-bold border-b-4 border-gray-500 p-2 inline">
+        <p className="text-4xl mb-6 font-bold border-b-4 border-green-500 p-2 inline">
           Experience
         </p>
 
