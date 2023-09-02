@@ -1,13 +1,13 @@
 export const techs = [
   {
     id: 1,
-    src: '/javascript.png',
+    src: '/skills/javascript.png',
     title: 'JavaScript',
     style: 'shadow-yellow-500',
   },
   {
     id: 2,
-    src: '/css.png',
+    src: '/skills/css.png',
     title: 'CSS',
     style: 'shadow-blue-500',
   },
@@ -21,25 +21,25 @@ export const techs = [
 
   {
     id: 4,
-    src: '/react.png',
+    src: '/skills/react.png',
     title: 'React',
     style: 'shadow-blue-600',
   },
   {
     id: 5,
-    src: '/tailwind.png',
+    src: '/skills/tailwind.png',
     title: 'Tailwind',
     style: 'shadow-sky-400',
   },
   {
     id: 6,
-    src: '/nextjs.png',
+    src: '/skills/nextjs.png',
     title: 'Next JS',
     style: 'shadow-white',
   },
   {
     id: 7,
-    src: '/graphql.png',
+    src: '/skills/graphql.png',
     title: 'GraphQL',
     style: 'shadow-pink-400',
   },
