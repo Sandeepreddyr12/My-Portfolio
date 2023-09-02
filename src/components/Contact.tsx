@@ -11,7 +11,6 @@ import { FiTwitter } from 'react-icons/fi';
 const Contact = () => {
   const [msg, setMsg] = useState<string>('');
 
-
   // google spreadsheet url , for storing information.
 
   const scriptURL =
@@ -51,36 +50,47 @@ const Contact = () => {
             the form.
           </p>
 
-          <div className="flex gap-3 items-center" data-aos="zoom-in-up">
-            <AiOutlineMail size={30} /> sandeepreddyr97@gmail.com
+          <div
+            className="cursor-pointer flex gap-3 items-center"
+            data-aos="zoom-in-up"
+          >
+            <AiOutlineMail size={30} />
+            <div
+              onClick={(e) => {
+                navigator.clipboard.writeText('sandeepreddyr97@gmail.com');
+                window.location.href = 'mailto:sandeepreddyr97@gmail.com';
+              }}
+            >
+              sandeepreddyr97@gmail.com
+            </div>{' '}
           </div>
           <div className="flex gap-3 items-center" data-aos="zoom-in-up">
             <BsTelephone size={30} /> +91 85220 94080
           </div>
-          <div className='w-full md:w-[70%]  lg:w-[50%] flex justify-between'>
-
-          <Link
-            href="#"
-            className="flex gap-3 items-center"
-            data-aos="zoom-in-up"
-          >
-            <BsLinkedin size={30} />
-          </Link>
-          <Link
-            href="#"
-            className="flex gap-3 items-center"
-            data-aos="zoom-in-up"
-          >
-            <IoLogoDiscord size={30} />
-          </Link>
-          <Link
-            href="#"
-            className="flex gap-3 items-center"
-            data-aos="zoom-in-up"
-          >
-            <FiTwitter size={30} />
-          </Link>
-        </div>
+          <div className="w-full sm:w-[90%] md:w-[70%]  lg:w-[50%] flex justify-between">
+            <Link
+              href="https://www.linkedin.com/in/sandeepreddy97/"
+              target="_blank"
+              data-aos="zoom-in-up"
+            >
+              <BsLinkedin size={30} className=" hover:scale-105" />
+            </Link>
+            <div
+              onClick={() => {
+                navigator.clipboard.writeText('SandeepReddy#9176');
+              }}
+              data-aos="zoom-in-up"
+            >
+              <IoLogoDiscord size={30} className=" hover:scale-105" />
+            </div>
+            <Link
+              href="https://twitter.com/Sandeepreddy222"
+              target='_blank'
+              data-aos="zoom-in-up"
+            >
+              <FiTwitter size={30} className=" hover:scale-105" />
+            </Link>
+          </div>
         </div>
 
         <form
