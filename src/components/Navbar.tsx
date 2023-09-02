@@ -43,10 +43,10 @@ const Navbar = () => {
       className={` fixed px-6 md:pt-2 top-0 right-0  left-0 z-10 border-gray-200       
 ${bgColor && 'backdrop-blur-[80px] '}`}
     >
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2 md:py-4 md:px-12">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto   md:px-12">
         <Link href="/">
           <Image
-            className="hover:scale-110 cursor-pointer"
+            className="hover:scale-110 cursor-pointer p-0"
             src="/sr-logo.jpg"
             width={60}
             height={60}
