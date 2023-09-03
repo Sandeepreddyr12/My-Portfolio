@@ -1,7 +1,8 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsTelephone } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';
@@ -24,7 +25,7 @@ const Contact = () => {
         setMsg("Your form has been submitted, I'll be in Touch shortly");
         setTimeout(() => {
           setMsg('');
-        }, 4000);
+        }, 5000);
 
         form.reset();
       })
@@ -32,7 +33,7 @@ const Contact = () => {
         setMsg('Error occured, while submitting your form');
         setTimeout(() => {
           setMsg('');
-        }, 4000);
+        }, 5000);
 
         // form.reset();
       });
@@ -73,6 +74,15 @@ const Contact = () => {
               target="_blank"
             >
               <BsLinkedin size={30} className=" hover:scale-105" />
+            </Link>
+            <Link target="_blank" href={`https://github.com/Sandeepreddyr12`}>
+              <Image
+                className="hover:scale-110 cursor-pointer"
+                src="/github.png"
+                width={30}
+                height={30}
+                alt="github link"
+              />
             </Link>
             <div
               onClick={() => {
