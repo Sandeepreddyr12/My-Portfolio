@@ -119,7 +119,7 @@ export default function Experience({}: Props) {
                   font-bold
                   rounded"
                 >
-                  feb-2020 - June-2022
+                  Jan-2020 - June-2022
                 </div>
               </div>
             </div>
