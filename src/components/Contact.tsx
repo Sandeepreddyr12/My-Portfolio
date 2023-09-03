@@ -71,7 +71,6 @@ const Contact = () => {
             <Link
               href="https://www.linkedin.com/in/sandeepreddy97/"
               target="_blank"
-              data-aos="zoom-in-up"
             >
               <BsLinkedin size={30} className=" hover:scale-105" />
             </Link>
@@ -79,15 +78,10 @@ const Contact = () => {
               onClick={() => {
                 navigator.clipboard.writeText('SandeepReddy#9176');
               }}
-              data-aos="zoom-in-up"
             >
               <IoLogoDiscord size={30} className=" hover:scale-105" />
             </div>
-            <Link
-              href="https://twitter.com/Sandeepreddy222"
-              target='_blank'
-              data-aos="zoom-in-up"
-            >
+            <Link href="https://twitter.com/Sandeepreddy222" target="_blank">
               <FiTwitter size={30} className=" hover:scale-105" />
             </Link>
           </div>
