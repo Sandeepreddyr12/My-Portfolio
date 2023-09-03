@@ -13,9 +13,7 @@ export default function Experience({}: Props) {
           Experience
         </p>
 
-        <p
-          className="text-secondary font-mono  my-6 w-full lg:w-[75%]"
-        >
+        <p className="text-secondary font-mono  my-6 w-full lg:w-[75%]">
           I’ve had the pleasure of working with excellent team in small company
           Nearly 4 years, designing and implementing both frontend and backend.
         </p>
@@ -78,10 +76,9 @@ export default function Experience({}: Props) {
                 </div>
               </div>
               <div className="font-sans mb-1">
-                {' '}
                 • Currently Building Fashion & Grocery E-commerce web app using
                 MERN stack from the Ground up for an indonesian firm.
-              </div>{' '}
+              </div>
               <div>
                 • It’s a 8-page layout, along with 12+ sub-page e-store,
                 features included customer-service, inventory-management for
@@ -144,12 +141,11 @@ export default function Experience({}: Props) {
                 </div>
               </div>
               <div className="font-sans mb-1">
-                {' '}
                 • Developed web-based user interactions for bakers (food
                 e-store) & school/college managements and developed
                 highly-responsive user interface components via Redux & React
                 concepts.
-              </div>{' '}
+              </div>
               <div className="mb-1">
                 • Converted the Class based components to React Hooks and
                 implemented Firebase Authentication & database with reusable
