@@ -110,7 +110,7 @@ const Hero = () => {
                   src="/skills/typescript.png"
                   width={30}
                   height={30}
-                  alt="js"
+                  alt="TS"
                 />
 
                 <Image
@@ -118,7 +118,7 @@ const Hero = () => {
                   src="/skills/react.png"
                   width={30}
                   height={30}
-                  alt="github link"
+                  alt="react"
                 />
 
                 <Image
@@ -126,7 +126,7 @@ const Hero = () => {
                   src="/skills/node.png"
                   width={30}
                   height={30}
-                  alt="github link"
+                  alt="Node js"
                 />
 
                 <Image
@@ -134,7 +134,7 @@ const Hero = () => {
                   src="/skills/mongo db.png"
                   width={30}
                   height={30}
-                  alt="github link"
+                  alt="Mongo DB"
                 />
 
                 <Image
@@ -142,7 +142,7 @@ const Hero = () => {
                   src="/skills/solidity.png"
                   width={30}
                   height={30}
-                  alt="github link"
+                  alt="Solidity"
                 />
 
                 <Image
@@ -150,7 +150,7 @@ const Hero = () => {
                   src="/skills/hardhat.png"
                   width={30}
                   height={30}
-                  alt="github link"
+                  alt="Hardhat"
                 />
               </div>
             </div>
