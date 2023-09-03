@@ -64,7 +64,7 @@ const Contact = () => {
               sandeepreddyr97@gmail.com
             </div>{' '}
           </div>
-          <div className="flex gap-3 items-center" data-aos="zoom-in-up">
+          <div className="flex gap-3 items-center">
             <BsTelephone size={30} /> +91 85220 94080
           </div>
           <div className="w-full sm:w-[90%] md:w-[70%]  lg:w-[50%] flex justify-between">
