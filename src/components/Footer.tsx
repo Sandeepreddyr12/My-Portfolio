@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="mt-16 py-6 text-center bg-accent">
-      © Sandeep | All rights reserved 2023.
+      © Sandeep Reddy | All rights reserved 2023.
     </div>
   );
 };

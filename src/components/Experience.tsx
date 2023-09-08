@@ -15,7 +15,8 @@ export default function Experience({}: Props) {
 
         <p className="text-secondary font-mono  my-6 w-full lg:w-[75%]">
           I’ve had the pleasure of working with excellent team in small company
-          Nearly 4 years, designing and implementing both frontend and backend.
+          Nearly for 4 years, designing and implementing both frontend and
+          backend.
         </p>
 
         <div className="space-y-12 my-16">
@@ -54,7 +55,7 @@ export default function Experience({}: Props) {
             </div>
 
             <div className="md:w-[70%] flex flex-wrap justify-center text-center lg:text-left lg:block">
-              <h3 className="text-white text-5xl font-bold">
+              <h3 className="text-white text-5xl font-bold hidden md:block">
                 hdao{' '}
                 <span className="text-base font-semibold">
                   {' '}
@@ -122,7 +123,7 @@ export default function Experience({}: Props) {
             </div>
 
             <div className="md:w-[70%] flex flex-wrap justify-center text-center lg:text-left lg:block">
-              <h3 className="text-white text-5xl font-bold">
+              <h3 className="text-white text-5xl font-bold hidden md:block">
                 hdao{' '}
                 <span className="text-base font-semibold"> info systems.</span>
               </h3>
