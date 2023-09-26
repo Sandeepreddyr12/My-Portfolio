@@ -87,25 +87,31 @@ export const techs = [
   },
   {
     id: 15,
+    src: '/skills/prisma.png',
+    title: 'Prisma',
+    style: 'shadow-blue-950',
+  },
+  {
+    id: 16,
     src: '/skills/trpc.svg',
     title: 'tRPC',
     style: 'shadow-blue-500',
   },
   {
-    id: 16,
+    id: 17,
     src: '/skills/solidity.png',
     title: 'Solidity',
     style: 'shadow-gray-500',
   },
   {
-    id: 17,
+    id: 18,
     src: '/skills/hardhat.png',
     title: 'Hardhat',
     style: 'shadow-yellow-500',
   },
 
   {
-    id: 18,
+    id: 19,
     src: '/skills/ethereum.png',
     title: 'Ethereum',
     style: 'shadow-purple-600',
