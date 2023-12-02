@@ -22,7 +22,7 @@ const Hero = () => {
 
           <div className="w-full   md:px-0 lg:w-full  mt-16 flex justify-between items-center">
             <a
-              href="/sandeep's Resume.pdf"
+              href="/sandeep's Resume-1.pdf"
               download
               className=" relative inline-flex items-center justify-start py-3 pl-4 pr-12 mx-2 overflow-hidden font-bold text-indigo-500 transition-all duration-150 ease-in-out rounded-full hover:pl-10 hover:pr-6 bg-gray-800 group"
             >
@@ -100,7 +100,7 @@ const Hero = () => {
             </p>
             <div className="text-base font-mono mt-16">
               <p>
-                a passionate fullstack web2 and web3 developer with nearly four
+                a passionate fullstack developer with nearly four
                 years of experience in the web developement.
               </p>
 
@@ -120,6 +120,15 @@ const Hero = () => {
                   height={30}
                   alt="react"
                 />
+
+                <Image
+                  className="hover:scale-110 cursor-pointer"
+                  src="/skills/css.png"
+                  width={30}
+                  height={30}
+                  alt="react"
+                />
+
 
                 <Image
                   className="hover:scale-110 cursor-pointer"
@@ -143,14 +152,6 @@ const Hero = () => {
                   width={30}
                   height={30}
                   alt="Solidity"
-                />
-
-                <Image
-                  className="hover:scale-110 cursor-pointer"
-                  src="/skills/hardhat.png"
-                  width={30}
-                  height={30}
-                  alt="Hardhat"
                 />
               </div>
             </div>
