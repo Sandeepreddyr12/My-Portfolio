@@ -15,7 +15,7 @@ export default function Experience({}: Props) {
 
         <p className="text-secondary font-mono  my-6 w-full lg:w-[75%]">
           I’ve had the pleasure of working with excellent team in small company
-          Nearly for 4 years, designing and implementing both frontend and
+          for over 4 years, designing and implementing both frontend and
           backend.
         </p>
 
