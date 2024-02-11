@@ -100,7 +100,7 @@ const Hero = () => {
             </p>
             <div className="text-base font-mono mt-16">
               <p>
-                a passionate fullstack web2 and web3 developer with nearly four
+                a passionate fullstack web2 and web3 developer with over four
                 years of experience in the web developement.
               </p>
 
