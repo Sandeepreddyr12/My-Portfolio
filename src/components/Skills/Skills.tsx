@@ -4,7 +4,6 @@ import { techs } from './skillsData';
 
 const Experience = () => {
  
-console.log("from skills")
   return (
     <div id="skills" className="bg-gradient-to-b from-gray-800 to-black w-full pt-10 p-4 md:p-8 lg:p-16">
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">

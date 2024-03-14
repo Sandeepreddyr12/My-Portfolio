@@ -11,7 +11,6 @@ import { FiTwitter } from 'react-icons/fi';
 
 const Contact = () => {
 
-  console.log("contact form")
 
   const [msg, setMsg] = useState<string>('');
 
