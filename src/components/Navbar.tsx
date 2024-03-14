@@ -98,7 +98,7 @@ useEffect(() => {
 
       // Traverse all elements with IDs and find the closest one to the scroll position
       document.querySelectorAll('[id]').forEach((element) => {
-        const distance = Math.abs(element.offsetTop - scrollY);
+        const distance = Math.abs((element as HTMLElement).offsetTop - scrollY);
         if (distance < closestDistance) {
           closestDistance = distance;
           closestParentId = element.id;
