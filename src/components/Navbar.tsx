@@ -22,12 +22,16 @@ const Navbar = () => {
       setBgColor(true);
     } else {
       setBgColor(false);
-    }
+    } 
 
-    setCurrentRoute(
-      window && window.location.hash ? window.location.hash : null
-    );
+   window && window.location.hash ? setCurrentRoute(
+      window.location.hash 
+    ) : null
+
+    
   };
+
+
 
   useEffect(() => {
     // adding the event when scroll change background
@@ -37,6 +41,83 @@ const Navbar = () => {
       window.removeEventListener('scroll', changeBackground);
     };
   }, []);
+
+
+  //  useEffect(() => {
+  //   const handleClick = (event) => {
+
+  //     console.log( window )
+
+  //     console.log('scroll')
+  //     // Traverse up the DOM tree to find the closest parent element with an ID
+  //     let target = event.target;
+  //     while (target && target !== document) {
+  //       if (target.id) {
+  //         console.log(`Closest Parent ID: ${target.id}`);
+  //         // You can perform any action with the closest parent ID here
+  //         break;
+  //       }
+  //       target = target.parentNode;
+  //     }
+  //   };
+
+  //   // Attach click event listener to the window
+  //   // window.addEventListener('wheel', handleClick);
+
+  //   // Clean up event listener on unmount
+  //   return () => {
+  //     window.removeEventListener('wheel', handleClick);
+  //   };
+  // }, []);
+
+
+
+
+useEffect(() => {
+    const handleScroll = () => {
+      // Get the scroll position
+      const scrollY = window.scrollY;
+      
+      // Find the element closest to the scroll position with an ID
+      
+    
+// acts as a throttle function , needs to have more checks for more accuracy
+      if(scrollY % 10 === 0 ){
+      const closestParentId =   findClosestParentId(scrollY);
+
+      closestParentId !== 'navbar-default' ? setCurrentRoute(`#${closestParentId}`) : null
+
+      }
+
+      
+    };
+
+    const findClosestParentId = (scrollY: number) => {
+      let closestParentId = null;
+      let closestDistance = Number.MAX_SAFE_INTEGER;
+
+      // Traverse all elements with IDs and find the closest one to the scroll position
+      document.querySelectorAll('[id]').forEach((element) => {
+        const distance = Math.abs(element.offsetTop - scrollY);
+        if (distance < closestDistance) {
+          closestDistance = distance;
+          closestParentId = element.id;
+        }
+      });
+
+      return closestParentId;
+    };
+
+    // Attach scroll event listener to the window
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up event listener on unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
 
   return (
     <nav
@@ -91,7 +172,7 @@ ${bgColor && 'backdrop-blur-[80px] '}`}
               <Link
                 href="/"
                 className={`block py-2 pl-3 pr-4 text-white  rounded md:bg-transparent  md:p-0 dark:text-white hover:scale-105   ${
-                  currentRoute === null
+                  currentRoute == '#home' || null
                     ? 'bg-green-700  md:dark:text-green-500 md:text-green-700'
                     : ''
                 }`}
