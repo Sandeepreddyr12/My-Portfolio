@@ -10,6 +10,8 @@ import { IoLogoDiscord } from 'react-icons/io5';
 import { FiTwitter } from 'react-icons/fi';
 
 const Contact = () => {
+
+
   const [msg, setMsg] = useState<string>('');
 
   // google spreadsheet url , for storing information.
