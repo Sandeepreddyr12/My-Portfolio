@@ -128,7 +128,7 @@ ${bgColor && 'backdrop-blur-[80px] '}`}
         <Link href="/">
           <Image
             className="hover:scale-110 cursor-pointer p-0"
-            src="/sr-logo.jpg"
+            src="/sr-logo.png"
             width={60}
             height={60}
             alt="github link"
