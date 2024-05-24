@@ -34,6 +34,27 @@ export default function ChatBox({ open, onClose }: AIChatBoxProps) {
 
   const inputRef = useRef<HTMLInputElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
+
+
+const handleClickOutside = (event:any) => {
+  if (modalRef.current && !modalRef.current.contains(event.target)) {
+    onClose();
+  }
+};
+
+
+
+
+  useEffect(() => {
+    if (open) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [open]);
 
 
   useEffect(() => {
@@ -52,6 +73,7 @@ export default function ChatBox({ open, onClose }: AIChatBoxProps) {
 
   return (
     <div
+    ref={modalRef}
       className={cn(
         'bottom-4 right-0 z-50 w-full max-w-[400px] p-1 xl:right-36',
         open ? 'fixed' : 'hidden'
