@@ -4,11 +4,17 @@ import { Bot, SendHorizontal, Trash, XCircle } from 'lucide-react';
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
+import type { Metadata } from 'next';
 
 interface AIChatBoxProps {
   open: boolean;
   onClose: () => void;
 }
+
+export const metadata: Metadata = {
+  title: 'AI chatBot',
+  description: 'An AI smartbot integrated in my portfolio, give more about sandeep reddy.',
+};
 
 export default function ChatBox({ open, onClose }: AIChatBoxProps) {
   const {
@@ -19,10 +25,16 @@ export default function ChatBox({ open, onClose }: AIChatBoxProps) {
     setMessages,
     isLoading,
     error,
-  } = useChat();
+  } = useChat({
+    api: 'api/chat',
+    onError: (e) => {
+      console.log(e);
+    },
+  });
 
   const inputRef = useRef<HTMLInputElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+
 
   useEffect(() => {
     if (scrollRef.current) {
@@ -41,12 +53,13 @@ export default function ChatBox({ open, onClose }: AIChatBoxProps) {
   return (
     <div
       className={cn(
-        'bottom-0 right-0 z-50 w-full max-w-[400px] p-1 xl:right-36',
+        'bottom-4 right-0 z-50 w-full max-w-[400px] p-1 xl:right-36',
         open ? 'fixed' : 'hidden'
       )}
     >
       <button onClick={onClose} className="mb-1 ms-auto block">
-        <XCircle size={30} className="rounded-full bg-green-600" />
+        <XCircle size={30} className="rounded-full bg-green-600 hover:bg-red-600 hover:scale-110
+        " />
       </button>
       <div className="flex h-[500px] flex-col rounded border bg-green-800 shadow-xl">
         <div className="mt-3 h-full overflow-y-auto px-3" ref={scrollRef}>
@@ -98,7 +111,7 @@ export default function ChatBox({ open, onClose }: AIChatBoxProps) {
             value={input}
             onChange={handleInputChange}
             placeholder="Say something..."
-            className="grow rounded border bg-background px-3 py-2"
+            className="text-green-800 font-semiboldbold grow rounded border bg-background px-3 py-2"
             ref={inputRef}
           />
           <button
@@ -142,7 +155,7 @@ function ChatMessage({ message: { role, content } }: ChatMessageProps) {
               <Link
                 {...props}
                 href={props.href ?? ''}
-                className="text-primary hover:underline"
+                className="text-primary font-bold text-green-950 underline"
               />
             ),
             p: ({ node, ...props }) => (

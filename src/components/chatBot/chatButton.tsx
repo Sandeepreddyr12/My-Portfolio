@@ -1,8 +1,10 @@
 'use client';
 
-import { Bot } from 'lucide-react';
 import { useState } from 'react';
+import Lottie from 'lottie-react';
 import ChatBox from './chatBox';
+import chatBot from '../../../public/lottieAnime/chatBot.json';
+
 
 export default function ChatButton() {
   const [chatBoxOpen, setChatBoxOpen] = useState(false);
@@ -11,19 +13,14 @@ export default function ChatButton() {
     <>
       <button
         className="z-20 text-white flex flex-col shrink-0 grow-0 justify-around 
-                  fixed top-28 left-5 rounded-lg
-                  mr-1 mb-5 lg:mr-5 lg:mb-5 xl:mr-10 xl:mb-10"
-        onClick={() => setChatBoxOpen(true)}
+                  fixed bottom-16 right-5 rounded-lg
+                  mr-1 mb-5 lg:mr-5 lg:mb-5 xl:mr-10 xl:mb-10 hover:scale-110"
+        onClick={() => setChatBoxOpen(!chatBoxOpen)}
       >
-        <Bot size={36} />
-        {/* <Link
-          href="https://www.flaticon.com/free-animated-icons/robot"
-          title="robot animated icons"
-        >
-          Robot animated icons created by Freepik - Flaticon
-        </Link> */}
+        
+        <Lottie animationData={chatBot} loop={true} className='w-36' />
       </button>
-      <ChatBox open={chatBoxOpen} onClose={() => setChatBoxOpen(false)} />
+      <ChatBox open={chatBoxOpen} onClose={() => setChatBoxOpen(false)}  />
     </>
   );
 }
