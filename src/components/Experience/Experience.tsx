@@ -1,6 +1,14 @@
 import Image from 'next/image';
+import type { Metadata} from 'next';
 
 type Props = {};
+
+
+
+export const metadata: Metadata = {
+  title: 'Experience',
+  description: 'Learn more about sandeep reddy professional experience.',
+};
 
 export default function Experience({}: Props) {
   return (

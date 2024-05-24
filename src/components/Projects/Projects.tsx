@@ -1,8 +1,12 @@
 import React from "react";
 import Card from "./Card";
 import { data } from "./projectsData";
+import type { Metadata } from "next";
 
-
+export const metadata: Metadata = {
+  title: 'Projects',
+  description: 'learn more about sandeep reddy personal projects.',
+};
 
 const Projects = () => {
   return (

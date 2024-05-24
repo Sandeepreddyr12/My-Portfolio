@@ -1,5 +1,11 @@
 import Image from 'next/image'; 
 import { techs } from './skillsData';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Skills',
+  description: 'learn more about sandeep reddy top skills.',
+};
 
 
 const Experience = () => {

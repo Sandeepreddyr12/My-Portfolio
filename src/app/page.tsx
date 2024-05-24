@@ -5,6 +5,7 @@ import Hero from '@/components/Hero';
 import Projects from '@/components/Projects/Projects';
 import Skills from '@/components/Skills/Skills';
 import Experience from '@/components/Experience/Experience';
+import type { Metadata } from 'next';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -14,6 +15,10 @@ import {  useEffect } from 'react';
 // const Skills = dynamic(() => import('@/components/Skills/Skills'), {
 //   ssr: false
 // });
+
+export const metadata: Metadata = {
+  title: 'sandeep Reddy - My Smart Portfolio',
+};
 
 export default function Home() {
 

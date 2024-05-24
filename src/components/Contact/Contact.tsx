@@ -8,6 +8,13 @@ import { BsTelephone } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';
 import { IoLogoDiscord } from 'react-icons/io5';
 import { FiTwitter } from 'react-icons/fi';
+import { Metadata } from 'next';
+
+
+export const metadata: Metadata = {
+  title: 'Contact Me',
+  description: 'social media links and contact form to get in touch with Sandeep Reddy.',
+};
 
 const Contact = () => {
 
