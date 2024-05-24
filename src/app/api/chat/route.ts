@@ -16,6 +16,7 @@ import { UpstashRedisCache } from 'langchain/cache/upstash_redis';
 import { createStuffDocumentsChain } from 'langchain/chains/combine_documents';
 import { createHistoryAwareRetriever } from 'langchain/chains/history_aware_retriever';
 import { createRetrievalChain } from 'langchain/chains/retrieval';
+import https from 'https';
 
 export async function POST(req: Request) {
   try {
@@ -33,7 +34,9 @@ export async function POST(req: Request) {
     const currentMessageContent = messages[messages.length - 1].content;
 
     const cache = new UpstashRedisCache({
-      client: Redis.fromEnv(),
+      client: Redis.fromEnv({
+        agent: new https.Agent({ keepAlive: true }),
+      }),
     });
 
     const { stream, handlers } = LangChainStream();
