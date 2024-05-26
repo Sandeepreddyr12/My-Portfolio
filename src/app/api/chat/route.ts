@@ -1,3 +1,5 @@
+
+import { NextResponse } from 'next/server';
 import { getVectorStore } from '@/lib/astradb';
 import { AIMessage, HumanMessage } from '@langchain/core/messages';
 import {
@@ -109,7 +111,7 @@ export async function POST(req: Request) {
 
     return new StreamingTextResponse(stream);
   } catch (error) {
-    console.error(error);
-    // return Response.json({ error: 'Internal server error' }, { status: 500 });
+    // console.error(error);
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
 }
