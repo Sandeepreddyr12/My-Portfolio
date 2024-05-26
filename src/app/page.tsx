@@ -10,11 +10,7 @@ import type { Metadata } from 'next';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {  useEffect } from 'react';
-// import dynamic from 'next/dynamic'
 
-// const Skills = dynamic(() => import('@/components/Skills/Skills'), {
-//   ssr: false
-// });
 
 export const metadata: Metadata = {
   title: 'sandeep Reddy - My Smart Portfolio',
