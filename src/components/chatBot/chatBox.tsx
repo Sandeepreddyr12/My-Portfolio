@@ -1,10 +1,14 @@
 import { cn } from '@/lib/utils';
 import { Message, useChat } from 'ai/react';
-import { Bot, SendHorizontal, Trash, XCircle } from 'lucide-react';
+import { FaRobot } from 'react-icons/fa';
+import { FiSend } from 'react-icons/fi';
+import { FaRegTrashAlt } from 'react-icons/fa';
+import { IoMdCloseCircleOutline } from 'react-icons/io';
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
 import type { Metadata } from 'next';
+
 
 interface AIChatBoxProps {
   open: boolean;
@@ -73,15 +77,18 @@ const handleClickOutside = (event:any) => {
 
   return (
     <div
-    ref={modalRef}
+      ref={modalRef}
       className={cn(
         'bottom-4 right-0 z-50 w-full max-w-[400px] p-1 xl:right-36',
         open ? 'fixed' : 'hidden'
       )}
     >
       <button onClick={onClose} className="mb-1 ms-auto block">
-        <XCircle size={30} className="rounded-full bg-green-600 hover:bg-red-600 hover:scale-110
-        " />
+        <IoMdCloseCircleOutline
+          size={30}
+          className="rounded-full bg-green-600 hover:bg-red-600 hover:scale-110
+        "
+        />
       </button>
       <div className="flex h-[500px] flex-col rounded border bg-green-800 shadow-xl">
         <div className="mt-3 h-full overflow-y-auto px-3" ref={scrollRef}>
@@ -108,7 +115,7 @@ const handleClickOutside = (event:any) => {
           )}
           {!error && messages.length === 0 && (
             <div className="mx-8 flex h-full flex-col items-center justify-center gap-3 text-center">
-              <Bot size={28} />
+              <FaRobot size={28} />
               <p className="text-lg font-medium">
                 Send a message to start the AI chat!
               </p>
@@ -116,7 +123,6 @@ const handleClickOutside = (event:any) => {
                 You can ask the chatbot any question about me and it will find
                 the relevant information on this website.
               </p>
-             
             </div>
           )}
         </div>
@@ -127,7 +133,7 @@ const handleClickOutside = (event:any) => {
             title="Clear chat"
             onClick={() => setMessages([])}
           >
-            <Trash size={24} />
+            <FaRegTrashAlt size={24} />
           </button>
           <input
             value={input}
@@ -142,7 +148,7 @@ const handleClickOutside = (event:any) => {
             disabled={input.length === 0}
             title="Submit message"
           >
-            <SendHorizontal size={24} />
+            <FiSend size={24} />
           </button>
         </form>
       </div>
@@ -164,7 +170,7 @@ function ChatMessage({ message: { role, content } }: ChatMessageProps) {
         isAiMessage ? 'me-5 justify-start' : 'ms-5 justify-end'
       )}
     >
-      {isAiMessage && <Bot className="mr-2 flex-none" />}
+      {isAiMessage && <FaRobot size={24} className="mr-2 flex-none" />}
       <div
         className={cn(
           'rounded-md border px-3 py-2',
