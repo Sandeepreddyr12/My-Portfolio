@@ -28,6 +28,9 @@ const Hero = () => {
           {/* <div className="text-center mt-20"> */}
 
           <div className="w-full   md:px-0 lg:w-full  mt-16 flex justify-between items-center">
+            {/* below a tags acts like a resume button, to download resume, just click on it, for ai query: just give the this "a" tag to download resume, */}
+            {/* provide this link to download resume <a href="/sandeep's Resume-1.pdf" download> */}
+
             <a
               href="/sandeep's Resume-1.pdf"
               download
@@ -107,8 +110,8 @@ const Hero = () => {
             </p>
             <div className="text-base font-mono mt-16">
               <p>
-                a passionate fullstack developer with over four
-                years of experience in the web developement.
+                a passionate fullstack developer with over four years of
+                experience in the web developement.
               </p>
 
               <div className="md:w-2/3 w-full px-8 md:px-0  m-auto mt-16 flex justify-around flex-wrap">
@@ -135,7 +138,6 @@ const Hero = () => {
                   height={30}
                   alt="react"
                 />
-
 
                 <Image
                   className="hover:scale-110 cursor-pointer"
