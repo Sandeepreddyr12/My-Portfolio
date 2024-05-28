@@ -1,5 +1,5 @@
 
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { getVectorStore } from '@/lib/astradb';
 import { AIMessage, HumanMessage } from '@langchain/core/messages';
 import {
@@ -9,6 +9,7 @@ import {
 } from '@langchain/core/prompts';
 import { ChatOpenAI } from '@langchain/openai';
 import { Redis } from '@upstash/redis';
+import { Ratelimit } from '@upstash/ratelimit';
 import {
   LangChainStream,
   StreamingTextResponse,
@@ -20,8 +21,23 @@ import { createHistoryAwareRetriever } from 'langchain/chains/history_aware_retr
 import { createRetrievalChain } from 'langchain/chains/retrieval';
 import https from 'https';
 
-export async function POST(req: Request) {
+
+const ratelimit = new Ratelimit({
+  redis: Redis.fromEnv(),
+  limiter: Ratelimit.fixedWindow(8, '30s'),
+});
+
+export async function POST(req: NextRequest) {
   try {
+
+ const ip = req.ip ?? 'ip';
+ const { success, remaining } = await ratelimit.limit(ip);
+
+ // block the request if unsuccessfull
+ if (!success) {
+   return new Response('Ratelimited!', { status: 429 });
+ }
+
     const body = await req.json();
     const messages = body.messages;
 

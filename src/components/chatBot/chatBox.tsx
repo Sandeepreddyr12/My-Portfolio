@@ -73,6 +73,7 @@ const handleClickOutside = (event:any) => {
     }
   }, [open]);
 
+
   const lastMessageIsUser = messages[messages.length - 1]?.role === 'user';
 
   return (
@@ -144,7 +145,7 @@ const handleClickOutside = (event:any) => {
           />
           <button
             type="submit"
-            className="flex w-10 flex-none items-center justify-center disabled:opacity-50"
+            className="flex w-10 flex-none items-center justify-center disabled:opacity-50 text-black disabled:text-gray-400"
             disabled={input.length === 0}
             title="Submit message"
           >
