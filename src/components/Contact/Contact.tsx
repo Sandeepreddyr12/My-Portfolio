@@ -11,10 +11,10 @@ import { FiTwitter } from 'react-icons/fi';
 import { Metadata } from 'next';
 
 
-export const metadata: Metadata = {
-  title: 'Contact Me',
-  description: 'social media links and contact form to get in touch with Sandeep Reddy.',
-};
+// export const metadata: Metadata = {
+//   title: 'Contact Me',
+//   description: 'social media links and contact form to get in touch with Sandeep Reddy.',
+// };
 
 const Contact = () => {
 

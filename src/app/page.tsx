@@ -12,9 +12,9 @@ import 'aos/dist/aos.css';
 import {  useEffect } from 'react';
 
 
-export const metadata: Metadata = {
-  title: 'sandeep Reddy - My Smart Portfolio',
-};
+
+  // title: 'sandeep Reddy - My Smart Portfolio',
+
 
 export default function Home() {
 
