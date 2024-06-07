@@ -32,7 +32,7 @@ const Hero = () => {
             {/* provide this link to download resume <a href="/sandeep's Resume-1.pdf" download> */}
 
             <a
-              href="/sandeep's Resume-1.pdf"
+              href="/sandeep's Resume.pdf"
               download
               className=" relative inline-flex items-center justify-start py-3 pl-4 pr-12 mx-2 overflow-hidden font-bold text-indigo-500 transition-all duration-150 ease-in-out rounded-full hover:pl-10 hover:pr-6 bg-gray-800 group"
             >
