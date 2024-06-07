@@ -46,7 +46,7 @@ export default function Experience({}: Props) {
                   MERN / Full Stack Dev
                 </div>
                 <div className="px-2 py-2 mb-2 text-sm bg-gray-100 font-bold rounded ">
-                  Bangalore, India.
+                  Hyderabad, India.
                 </div>
                 <div
                   className="mb-2
@@ -64,11 +64,8 @@ export default function Experience({}: Props) {
 
             <div className="md:w-[70%] flex flex-wrap justify-center text-center lg:text-left lg:block">
               <h3 className="text-white text-5xl font-bold hidden md:block">
-                hdao{' '}
-                <span className="text-base font-semibold">
-                  {' '}
-                  {''}info systems.
-                </span>
+                {/*it is the name of company i've been working with */}
+                Silicon Matrix
               </h3>
               <div className="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8">
                 <div className="px-2 py-2 text-sm bg-gray-900 font-semibold rounded-xl ">
@@ -131,6 +128,7 @@ export default function Experience({}: Props) {
             </div>
 
             <div className="md:w-[70%] flex flex-wrap justify-center text-center lg:text-left lg:block">
+                {/* below h3 it is the name of company i've worked with*/}
               <h3 className="text-white text-5xl font-bold hidden md:block">
                 hdao{' '}
                 <span className="text-base font-semibold"> info systems.</span>
