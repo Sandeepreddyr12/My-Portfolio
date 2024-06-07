@@ -34,7 +34,7 @@ export default function Experience({}: Props) {
           >
             <div className="md:w-[30%] flex flex-col justify-around">
               <Image
-                src="/hdao logo.png"
+                src="/silicon-logo.png"
                 alt=""
                 width={150}
                 height={150}
@@ -128,7 +128,7 @@ export default function Experience({}: Props) {
             </div>
 
             <div className="md:w-[70%] flex flex-wrap justify-center text-center lg:text-left lg:block">
-                {/* below h3 it is the name of company i've worked with*/}
+              {/* below h3 it is the name of company i've worked with*/}
               <h3 className="text-white text-5xl font-bold hidden md:block">
                 hdao{' '}
                 <span className="text-base font-semibold"> info systems.</span>
