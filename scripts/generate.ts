@@ -7,6 +7,9 @@ import { DirectoryLoader } from 'langchain/document_loaders/fs/directory';
 import { TextLoader } from 'langchain/document_loaders/fs/text';
 import { RecursiveCharacterTextSplitter } from 'langchain/text_splitter';
 import { getEmbeddingsCollection, getVectorStore } from '../src/lib/astradb';
+const fs = require('fs');
+
+
 
 async function generateEmbeddings() {
   await Redis.fromEnv().flushdb();
@@ -77,6 +80,19 @@ async function generateEmbeddings() {
     const splitter = RecursiveCharacterTextSplitter.fromLanguage('html');
     
     const splitDocs = await splitter.splitDocuments(docs);
+
+
+    fs.writeFile(
+      `${__dirname}/DBdata1.json`,
+      JSON.stringify(splitDocs, null, 2),
+      (err: any) => {
+        if (err) {
+          console.error(err);
+          return;
+        }
+        console.log('Data written to file successfully');
+      }
+    );
     
 
   await vectorStore.addDocuments(splitDocs);
