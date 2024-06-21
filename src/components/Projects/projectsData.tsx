@@ -2,7 +2,7 @@ export const data = [
   {
     id: 0,
     title: 'Decent Bet',
-    desc: 'Explore the next-generation of sports betting through our cutting-edge decentralized web application. With no limit on wagering, blockchain-backed security, and an innovative winnings predictor feature, you can bet on your favorite sports teams like never before.',
+    desc: 'Experience the future of sports betting with our cutting-edge AI-integrated, decentralized smart web app. Enjoy unlimited wagering, blockchain-backed security, a smartly assisted UI, and an innovative winnings predictor feature, allowing you to bet on your favorite sports teams like never before.',
     img: '/decent-bet.png',
     links: {
       github: 'https://github.com/Sandeepreddyr12/Decent-Bet',
@@ -14,7 +14,7 @@ export const data = [
     tags: [
       'Next 13',
       'Typescript',
-      'Tailwind',
+      'AI assist',
       'Soldity',
       'Ethereum',
       'Hardhat',
@@ -22,7 +22,7 @@ export const data = [
       'Moralis',
       'Thirdweb',
       'Chainlink',
-      'ethers',
+      'smart UI',
     ],
   },
   {
@@ -99,7 +99,7 @@ export const data = [
   {
     id: 5,
     title: 'My Portfolio',
-    desc: 'Explore my straightforward portfolio, a showcase of my personal projects, skills, and experiences, meticulously crafted using Next.js for a clean and engaging presentation.',
+    desc: 'Explore my AI-assisted smart portfolio, a meticulously crafted showcase of my personal projects, skills, and experiences. Built with Next.js and advanced AI tools, it offers a clean and engaging presentation.',
     img: '/myPortfolio.png',
     links: {
       github: 'https://github.com/Sandeepreddyr12/My-Portfolio',
@@ -107,6 +107,6 @@ export const data = [
       video: '',
     },
 
-    tags: ['Next', 'Typescript', 'Tailwind'],
+    tags: ['Next', 'Typescript', 'Tailwind', 'AI assist', 'Chat-Bot'],
   },
 ];
