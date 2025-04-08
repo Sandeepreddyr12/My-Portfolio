@@ -110,7 +110,7 @@ const Hero = () => {
             </p>
             <div className="text-base font-mono mt-16">
               <p>
-                a passionate fullstack developer with over four years of
+                a passionate fullstack developer with over 5 years of
                 experience in the web developement.
               </p>
 

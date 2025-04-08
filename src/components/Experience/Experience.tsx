@@ -22,9 +22,9 @@ export default function Experience({}: Props) {
         </p>
 
         <p className="text-secondary font-mono  my-6 w-full lg:w-[75%]">
-          I’ve had the pleasure of working with excellent team in small company
-          for over 4 years, designing and implementing both frontend and
-          backend.
+          I’ve had the pleasure of working with excellent teams in small firms
+          for over 5 years, designing and implementing both frontend and
+          backends.
         </p>
 
         <div className="space-y-12 my-16">
