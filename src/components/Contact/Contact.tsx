@@ -67,15 +67,12 @@ const Contact = () => {
             <AiOutlineMail size={30} />
             <div
               onClick={(e) => {
-                navigator.clipboard.writeText('sandeepreddyr97@gmail.com');
-                window.location.href = 'mailto:sandeepreddyr97@gmail.com';
+                navigator.clipboard.writeText('sandeepreddyr97@outlook.com');
+                window.location.href = 'mailto:sandeepreddyr97@outlook.com';
               }}
             >
-              sandeepreddyr97@gmail.com
+              sandeepreddyr97@outlook.com
             </div>{' '}
-          </div>
-          <div className="flex gap-3 items-center">
-            <BsTelephone size={30} /> +91 85220 94080
           </div>
           <div className="w-full sm:w-[90%] md:w-[70%]  lg:w-[50%] flex justify-between">
             <Link

@@ -83,13 +83,13 @@ export default function Experience({}: Props) {
               </div>
               <div className="font-sans mb-1">
                 • Currently Building Fashion & Grocery E-commerce web app using
-                MERN stack from the Ground up for an indonesian firm.
+                MERN stack from the Ground up for an International Client.
               </div>
               <div>
-                • It’s a 8-page layout, along with 12+ sub-page e-store,
-                features included customer-service, inventory-management for
-                merchants, product catalogue, cart, online payments and
-                mobile-responsiveness etc.
+                • Developed a housing and real estate web app using Next.js for
+                a U.S. client. Led the optimization of a scalable backend and
+                web responsiveness initiative, ensuring a seamless user
+                experience across devices and broadening the platform’s reach
               </div>
             </div>
           </div>
@@ -148,15 +148,20 @@ export default function Experience({}: Props) {
                 </div>
               </div>
               <div className="font-sans mb-1">
-                • Developed web-based user interactions for bakers (food
-                e-store) & school/college managements and developed
-                highly-responsive user interface components via Redux & React
-                concepts.
+                • Developed a next-generation Recruitment Automation Tool that
+                streamlines the entire hiring process, featuring intelligent
+                resume parsing, automated candidate evaluation, low-latency
+                video interviews, and seamless interview scheduling and
+                tracking. The tool is actively used by leading MNCs, including
+                Infosys, to drive recruitment efficiency and enhance the overall
+                hiring experience.
               </div>
               <div className="mb-1">
-                • Converted the Class based components to React Hooks and
-                implemented Firebase Authentication & database with reusable
-                components.
+                • Converted Class-based components into efficient
+                React Hooks, optimizing code structure and enhancing
+                scalability. Introduced Firebase Authentication and database
+                integration, reinforcing security measures and ensuring seamless
+                data management within the application.
               </div>
               <div>
                 • Optimized components for maximum performance across a vast

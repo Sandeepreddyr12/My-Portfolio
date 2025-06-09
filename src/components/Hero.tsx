@@ -110,8 +110,8 @@ const Hero = () => {
             </p>
             <div className="text-base font-mono mt-16">
               <p>
-                a passionate fullstack developer with over 5 years of
-                experience in the web developement.
+                a dedicated full-stack developer with more than 5 years of
+                expertise in web development, machine learning, and blockchain technology.
               </p>
 
               <div className="md:w-2/3 w-full px-8 md:px-0  m-auto mt-16 flex justify-around flex-wrap">

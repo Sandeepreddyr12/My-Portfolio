@@ -22,7 +22,7 @@ export const data = [
       'Moralis',
       'Thirdweb',
       'Chainlink',
-      'smart UI',
+      'Gen AI',
     ],
   },
   {
@@ -41,6 +41,19 @@ export const data = [
   },
   {
     id: 2,
+    title: 'RPSLS Game',
+    desc: 'A modern Rock Paper Scissors Lizard Spock game built with Web3 technologies and real-time multiplayer capabilities. The game features a sleek UI, allowing players to challenge friends or random opponents, with real-time updates and a leaderboard to track scores.',
+    img: '/rpslsGame.jpg',
+    links: {
+      github: 'https://github.com/Sandeepreddyr12/RPSLS_Game',
+      website: 'https://rpsslweb3.vercel.app/',
+      video:'',
+    },
+
+    tags: ['Next','Typescript', 'Firebase realtime DB', 'Web3','Ether JS', 'CSS'],
+  },
+  {
+    id: 3,
     title: 'Chat Web-App/T-Stack',
     desc: 'A TypeScript fullstack chat app, boasting cutting-edge features such as image and emoji uploads, seamless infinite scrolling, and powered by state-of-the-art technologies including Next.js 13, MongoDB, tRPC, React Query, Zod, and integrated Firebase/S3 for lightning-fast file uploads.',
     img: '/trpc-chat.png',
@@ -60,7 +73,7 @@ export const data = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: 'Next-13 Ecommerce',
     desc: 'A multi-page ecommerce application, offering a seamless shopping experience through dedicated pages like the product selection page, order customization and description page, and a secure payment gateway powered by Stripe for effortless transactions.',
     img: '/next-ecommerce.png',
@@ -73,7 +86,7 @@ export const data = [
     tags: ['Next', 'Tailwind', 'Stripe'],
   },
   {
-    id: 4,
+    id: 5,
     title: 'Chat App/Mern stack',
     desc: 'A MERN stack modern chat app, which let you Connect with friends, chat seamlessly by using web-sockets on dedicated pages, and personalize your profile with custom data and uploaded pictures stored securely in an S3 bucket. Our app ensures security with JWT authentication on the sign-in page.',
     img: '/mern-chat.png',
@@ -97,7 +110,7 @@ export const data = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: 'My Portfolio',
     desc: 'Explore my AI-assisted smart portfolio, a meticulously crafted showcase of my personal projects, skills, and experiences. Built with Next.js and advanced AI tools, it offers a clean and engaging presentation.',
     img: '/myPortfolio.png',
