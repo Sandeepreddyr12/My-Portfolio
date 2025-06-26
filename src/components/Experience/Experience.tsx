@@ -14,7 +14,7 @@ export default function Experience({}: Props) {
   return (
     <div
       id="experience"
-      className=" pt-20   flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full  lg:mt-auto"
+      className=" pt-20  flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full  lg:mt-auto"
     >
       <section className="w-full">
         <p className="text-4xl mb-6 font-bold border-b-4 border-green-500 p-2 inline">
@@ -30,18 +30,18 @@ export default function Experience({}: Props) {
         <div className="space-y-12 my-16">
           <div
             data-aos="fade-right"
-            className="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap"
+            className="w-full border border-nav py-12 px-4 md:px-8 lg:px-16 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap"
           >
-            <div className="md:w-[30%] flex flex-col justify-around">
+            <div className="flex flex-col justify-around">
               <Image
                 src="/silicon-logo.png"
                 alt=""
                 width={150}
                 height={150}
-                className="w-80  bg-white"
+                className="w-80  bg-white mb-6 p-4 rounded-lg"
               />
 
-              <div className="text-black flex flex-col justify-around text-center">
+              <div className=" text-black flex flex-col justify-around text-center">
                 <div className="px-2 py-2 mb-2 text-sm bg-gray-100 font-bold rounded ">
                   MERN / Full Stack Dev
                 </div>
@@ -63,7 +63,7 @@ export default function Experience({}: Props) {
             </div>
 
             <div className="md:w-[70%] flex flex-wrap justify-center text-center lg:text-left lg:block">
-              <h3 className="text-white text-5xl font-bold hidden md:block">
+              <h3 className="text-white text-5xl font-bold hidden lg:block">
                 {/*it is the name of company i've been working with */}
                 Silicon Matrix
               </h3>
@@ -81,7 +81,7 @@ export default function Experience({}: Props) {
                   Mongo DB
                 </div>
               </div>
-              <div className="font-sans mb-1">
+              <div className="font-sans mb-4">
                 • Currently Building Fashion & Grocery E-commerce web app using
                 MERN stack from the Ground up for an International Client.
               </div>
@@ -95,15 +95,15 @@ export default function Experience({}: Props) {
           </div>
           <div
             data-aos="fade-left"
-            className="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap"
+            className="w-full border border-nav py-12 px-4 md:px-8 lg:px-16 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap"
           >
-            <div className="md:w-[30%] flex flex-col justify-around">
+            <div className="flex flex-col justify-around">
               <Image
                 src="/hdao logo.png"
                 alt=""
                 width={150}
                 height={150}
-                className="w-80 mx-auto bg-white"
+                className="w-80 mx-auto bg-white mb-6 p-4 rounded-lg"
               />
 
               <div className="text-black flex flex-col justify-around text-center">
@@ -129,7 +129,7 @@ export default function Experience({}: Props) {
 
             <div className="md:w-[70%] flex flex-wrap justify-center text-center lg:text-left lg:block">
               {/* below h3 it is the name of company i've worked with*/}
-              <h3 className="text-white text-5xl font-bold hidden md:block">
+              <h3 className="text-white text-5xl font-bold hidden lg:block">
                 hdao{' '}
                 <span className="text-base font-semibold"> info systems.</span>
               </h3>
@@ -147,7 +147,7 @@ export default function Experience({}: Props) {
                   Firebase
                 </div>
               </div>
-              <div className="font-sans mb-1">
+              <div className="font-sans mb-4">
                 • Developed a next-generation Recruitment Automation Tool that
                 streamlines the entire hiring process, featuring intelligent
                 resume parsing, automated candidate evaluation, low-latency
@@ -156,12 +156,12 @@ export default function Experience({}: Props) {
                 Infosys, to drive recruitment efficiency and enhance the overall
                 hiring experience.
               </div>
-              <div className="mb-1">
-                • Converted Class-based components into efficient
-                React Hooks, optimizing code structure and enhancing
-                scalability. Introduced Firebase Authentication and database
-                integration, reinforcing security measures and ensuring seamless
-                data management within the application.
+              <div className="mb-4">
+                • Converted Class-based components into efficient React Hooks,
+                optimizing code structure and enhancing scalability. Introduced
+                Firebase Authentication and database integration, reinforcing
+                security measures and ensuring seamless data management within
+                the application.
               </div>
               <div>
                 • Optimized components for maximum performance across a vast
