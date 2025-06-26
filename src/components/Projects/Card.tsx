@@ -13,11 +13,18 @@ interface propsType {
 const Card: React.FC<propsType> = ({ title, desc, img, tags, links }) => {
   return (
     <div
-      className="border border-accent w-[300px] sm:w-[350px] rounded-xl"
+      className="border border-accent  rounded-xl "
       data-aos="zoom-in-up"
     >
-      <div className="w-[300px] sm:w-[350px] p-2 cursor-pointer">
-        <Image src={img} width={350} height={350} alt={title} />
+      <div className="w-full aspect-video relative rounded-t-xl overflow-hidden">
+        <Image
+          src={img}
+          alt={title}
+          fill
+          style={{ objectFit: "cover" }}
+          sizes="(max-width: 640px) 100vw, 350px"
+          className="rounded-t-xl"
+        />
       </div>
 
       <div className="p-4 space-y-4">
