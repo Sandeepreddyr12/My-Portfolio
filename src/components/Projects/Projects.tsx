@@ -24,7 +24,7 @@ const Projects = () => {
         projects are unique and offer a very good learning curve.{' '}
         <span className="font-bold text-lg text-green-300">Decent-Bet </span> is my current best project.{' '}
       </p>
-      <div className="grid mt-20 gap-11 xl:gap-20 xl:gap-y-10 md:grid-cols-2 xl:grid-cols-3 place-items-center sm:px-6 md:px-10">
+      <div className="grid mt-20 gap-11 xl:gap-20 xl:gap-y-10 md:grid-cols-2 lg:grid-cols-3 place-items-center sm:px-6 md:px-10">
         {data.map((el) => (
           <Card
             key={el.id}
